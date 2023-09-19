@@ -55,10 +55,10 @@ const authenticateToken = (request, response, next) => {
 };
 
 //API 1
-app.post("/login/", authenticateToken, async (request, response) => {
+app.post("/login/", async (request, response) => {
   const { username, password } = request.body;
   const getRes = `SELECT * FROM user where username='${username}';`;
-  const dbUser = await db.run(getRes);
+  const dbUser = await db.get(getRes);
   if (dbUser === undefined) {
     response.status(400);
     response.send("Invalid user");
@@ -68,6 +68,7 @@ app.post("/login/", authenticateToken, async (request, response) => {
     if (pass === true) {
       const payload = { username: username };
       const jwtToken = jwt.sign(payload, "string");
+      //console.log({ jwtToken });
       response.send({ jwtToken });
     } else {
       response.status(400);

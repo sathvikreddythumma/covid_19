@@ -2,16 +2,21 @@ POST http://localhost:3000/login/
 Content-Type: application/json
 
 {
-    "username": "christoper_phillips",
+    "username": "christopher_phillips",
     "password": "christy@123"
 }
 ###
 GET http://localhost:3000/states/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 ###
 GET http://localhost:3000/states/8/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 ###
 POST http://localhost:3000/districts/
 Content-Type: application/json
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
 
 {
     "districtName": "Bagalkot",
@@ -21,13 +26,20 @@ Content-Type: application/json
     "active": "315",
     "deaths": "8"
 }
+
 ###
 GET http://localhost:3000/districts/100/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 ###
 DELETE http://localhost:3000/districts/17/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 ###
 PUT http://localhost:3000/districts/100
 Content-Type: application/json
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 
 {
     "districtName": "Nadia",
@@ -39,6 +51,8 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3000/states/8/stats/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
+
 ###
-GET http://localhost:3000/login/
-Authorization: Bearer string 
+GET http://localhost:3000/states/
+Authorization: Berear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk1MTI4NTkyfQ.UrSMRMDEVBdbVwYbRCnKpSyMpa7Stv-uWFp7Mb64p44
